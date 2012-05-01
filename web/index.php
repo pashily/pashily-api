@@ -18,8 +18,8 @@ $app->register(new Silex\Provider\DoctrineServiceProvider(), [
         'user' => 'pashily',
         'password' => 'u0ZiibnPun88Pq8lyq7qDJGfBPdXzJ2C',
         ],
-    //'db.dbal.class_path' => __DIR__ . '/vendor/doctrine-dbal/lib'
-    //'db.common.class_path' => __DIR__ . '/vendor/doctrine-common/lib'
+    'db.dbal.class_path' => __DIR__ . '/vendor/doctrine-dbal'
+    'db.common.class_path' => __DIR__ . '/vendor/doctrine-common'
     ]);
 
 $app->get('/jobs', function() use ($app) {
